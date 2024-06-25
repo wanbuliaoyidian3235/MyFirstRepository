@@ -1,0 +1,66 @@
+body { /*整体页面样式*/
+    background-color: #f4f1eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.carousel {/*轮播效果*/
+    display: flex;
+    width: calc(100% * totalItems); /*确保容器宽度足够容纳所有项目*/
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    width: 150px; /* 设置固定宽度 */
+    height: 150px; /* 设置固定高度 */
+    transition: transform 0.5s ease, z-index 0s linear 0.25s;
+    transform: scale(0.8);
+    z-index: 1;
+    flex-shrink: 0;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    line-height: 150px; /* 调整行高以匹配高度 */
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.carousel-item.active {
+    transform: scale(1); /* 只有激活的项目放大 */
+    z-index: 2; /* 确保激活的卡片在最前面 */
+    opacity: 1; /* 完全不透明 */
+}
+
+
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
