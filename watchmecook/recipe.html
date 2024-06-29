@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>recipe</title>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif; /* 设置字体 */
+        margin: 0;
+        padding: 0;
+        background-color: #f4f1eb; /* 这里设置为淡米色 */
+    }
+    .search-container {
+        padding: 20px;
+        text-align: center;
+    }
+    .search-box {
+        width: 60%;
+        padding: 10px;
+        border: 1px solid #f4f1ebb9;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    
+    .emoji-button {
+        background: none;
+        border: none;
+        font-size: 32px; /* Adjust the font size to your preference */
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<div class="search-container">
+    <form action="/search" method="GET">
+        <input type="text" placeholder="search the recipe that you are intrested in" class="search-box" name="search">
+        <button type="submit" class="emoji-button">👩‍🍳</button>
+    </form>
+</div>
+
+<!-- 这里放其他页面内容 -->
+
+</body>
+</html>
