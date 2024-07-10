@@ -1,7 +1,41 @@
 [
     {
-        "name": "coconut pudding",
-        "ingredients": ["Ingredient 1", "Ingredient 2"],
-        "process" : []
+        "name": "chocolate muffin",
+        "ingredients": ["黄油90g", "糖50g", "鸡蛋2个", "牛奶160g", "低筋面粉160g", "玉米淀粉40g", "奶粉20g", "泡打粉8g", "可可粉35g", "巧克力豆40g"],
+        "ovenneeded": true,
+        "overall time": "35min",
+        "imagePath": "pic/pic1.png"
+    },
+
+    {
+        "name": "name2",
+        "ingredients": ["黄油90g", "糖50g", "鸡蛋2个", "牛奶160g", "低筋面粉160g", "玉米淀粉40g", "奶粉20g", "泡打粉8g", "可可粉35g", "巧克力豆40g"],
+        "ovenneeded": true,
+        "overall time": "xx mins",
+        "imagePath": "pic/pic2.png"
+    },
+
+    {
+        "name": "name3",
+        "ingredients": ["黄油90g", "糖50g", "鸡蛋2个", "牛奶160g", "低筋面粉160g", "玉米淀粉40g", "奶粉20g", "泡打粉8g", "可可粉35g", "巧克力豆40g"],
+        "ovenneeded": true,
+        "overall time": "xx mins",
+        "imagePath": "pic/pic1.png"
+    },
+    
+    {
+        "name": "name4",
+        "ingredients": ["黄油90g", "糖50g", "鸡蛋2个","牛奶160g","低筋面粉160g","玉米淀粉40g","奶粉20g","泡打粉8g","可可粉35g","巧克力豆40g"],
+        "ovenneeded": true,
+        "overall time": "xx mins",
+        "imagePath": "pic/pic3.png"
+    },
+
+    {
+        "name": "name5",
+        "ingredients": ["黄油90g", "糖50g", "鸡蛋2个","牛奶160g","低筋面粉160g","玉米淀粉40g","奶粉20g","泡打粉8g","可可粉35g","巧克力豆40g"],
+        "ovenneeded": false,
+        "overall time": "xx mins",
+        "imagePath": "pic/pic2.png"
     }
 ]
