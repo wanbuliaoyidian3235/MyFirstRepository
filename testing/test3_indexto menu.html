@@ -32,7 +32,6 @@
             margin-bottom: 20px; /* 设置段落下方的外边距 */
             margin-left: 2px;
             margin-right: 2px;
-            /* 没有设置color属性，会继承body的默认颜色 */
         }
         
         .logo-and-wordmark .logo {
@@ -190,7 +189,7 @@
                 var radius = Math.min(progress / 5, 200);
                 page.style.clipPath = 'circle(' + radius + '% at ' + x + 'px ' + y + 'px)';
 
-                if (radius < 135) {
+                if (radius < 200) {
                     requestAnimationFrame(animateClipPath);
                 } else {
                     window.location.href = 'menu2/menu.html';
