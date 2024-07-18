@@ -187,15 +187,19 @@
             function animateClipPath(timestamp) {
                 if (!start) start = timestamp;
                 var progress = timestamp - start;
-                var radius = Math.min(progress / 5, 200);
-                page.style.clipPath = 'circle(' + radius + '% at ' + x + 'px ' + y + 'px)';
+                var maxRadius = Math.sqrt(window.innerWidth * window.innerWidth + window.innerHeight * window.innerHeight) / 2;
+                var radius = Math.min(progress / 0.86, maxRadius);
+                page.style.clipPath = 'circle(' + radius + 'px at ' + x + 'px ' + y + 'px)';
 
-                if (radius < 135) {
+                if (radius < maxRadius) {
                     requestAnimationFrame(animateClipPath);
                 } else {
                     window.location.href = 'menu2/menu.html';
                 }
             }
+            var start = null;
+            var x = window.innerWidth / 2;
+            var y = window.innerHeight / 2;
 
             requestAnimationFrame(animateClipPath);
         }

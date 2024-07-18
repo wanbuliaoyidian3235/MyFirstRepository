@@ -14,13 +14,57 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
-
+            justify-content: center;
+            align-items: center;
+            animation: fadeInItem 1s ease-in-out forwards;
         }
-
+        .menu {
+            list-style: none;
+            padding: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .menu li {
+            margin: 10px 0;
+            opacity: 0;
+            animation: fadeInItem 1s ease-in-out forwards;
+        }
+        .menu li:nth-child(1) {
+        
+        }
+        .menu li:nth-child(2) {
+            animation-delay: 0.6s;
+        }
+        .menu li:nth-child(3) {
+            animation-delay: 1s;
+        }
+        .menu li:nth-child(4) {
+            animation-delay: 1.4s;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #f4f1eb;
+            font-size: 24px;
+        }
+        .menu a:hover {
+            color: #f4f1ebb5;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInItem {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
     </style>
 </head>
 <body>
-    <p>just something to read</p>
+    <h2>just something to read</h2>
+    <ul class="menu">
+        <li><a href="../watchmecook/recipe.html">recipe</a></li>
+        <li><a href="dhdhd.html">dhdhd</a></li>
+        <li><a href="umum.html">umum</a></li>
+        <li><a href="tt.html">tt</a></li>
+    </ul>
 </body>
-
-
+</html>
